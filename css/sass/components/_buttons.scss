@@ -1,0 +1,217 @@
+// Scroll to top Button
+.scroll-top {
+    display: inline-block;
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    right: 40px;
+    border-radius: 50%;
+    position: fixed;
+    outline: none;
+    bottom: 45px;
+    transition: background-color .3s,opacity .5s,visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+    padding: 0;
+    &:hover {
+        background-color: var(--purple);
+        border: 1px solid var(--purple);
+    }
+    .fa-arrow-up {
+        color: white;
+        font-size: 17px;
+    }
+}
+// Start Button
+.btn-start {
+    margin-top: 20px;
+    background-color: white;
+    color: #2d0446;
+    padding: 13px 30px;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    font-size: 16px;
+    transition: 1s;
+    &:hover {
+        background-color: var(--purple);
+        color: white;
+    }
+    @media screen and (max-width: 991px) {
+        margin-left: 0;
+        padding: 11px 25px;
+        margin-bottom: 10px;
+    }
+}
+// Contact Button
+.btn-contact {
+    background-color: var(--blue);
+    color: white;
+    padding: 13px 30px;
+    border-radius: 3px;
+    font-size: 16px;
+    border: 1px solid var(--blue);
+    outline: none;
+    margin-left: 10px;
+    transition: .6s;
+    &:hover {
+        opacity: .7;
+    }
+    @media screen and (max-width: 991px) {
+    margin-left: 0;
+    padding: 11px 28px;
+    }
+}
+// Header Search Button
+.btn-search {
+    background-color: var(--blue);
+    color: white;
+    font-size: 16px;
+    border: 0;
+    height: 40px;
+    width: 30%;
+    float: right;
+    outline: none;
+    cursor: pointer;
+    transition: hover .5s;
+    &:hover {
+        opacity: .8;
+    }
+    @media screen and (max-width: 576px) {
+        display: block;
+        width: 100%;
+        margin: auto;
+        height: 47px;
+        text-align: center;
+    }
+    span {
+        margin-left: 10px;
+        font-size: 12px;
+    }
+}
+// Domain Search Button
+.domain-search {
+    background-color: var(--blue);
+    color: white;
+    font-size: 16px;
+    border: 0;
+    line-height: 1.7 !important;
+    padding: 10px 17px;
+    margin-left: auto;
+    outline: none;
+    cursor: pointer;
+    transition: hover .6s;
+    &:hover {
+        opacity: .9;
+    }
+    @media screen and (max-width: 455px) {
+        display: block;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    span {
+        margin-left: 10px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+// Purcahse Button
+.purchase{
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    border: 1px solid #eceaea;
+    margin-top: 15px;
+    padding: 7px 27px;
+    color: var(--blue);
+    font-weight: bold;
+    transition: 1s;
+    cursor: pointer;
+    &:hover {
+    background-color: var(--blue);
+    color: white;
+    }
+}
+// Login Button
+.login-btn {
+    border:0;
+    outline: 0;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 45px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all .8s ease-in-out;
+    &:hover {
+        border:1px solid;
+        background-color: white;
+        color: black;
+    }
+}
+// Register Button
+.btn-reg {
+    border:0;
+    outline: 0;
+    background-color: #ead0be;
+    color: white;
+    width: 100%;
+    height: 45px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all .8s;
+    &:hover {
+        background-color: #6c310e;
+        color: #fff;
+    }
+}
+// Contact Form Button
+.c-inputs button{
+	width:250px;
+	height: 40px;
+	background-color: #FFFFFF;
+	border: none;
+	outline: none;
+	margin-top: 20px;
+	border-radius: 3px;
+    transition: all 0.5s;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+	letter-spacing: 1px;
+    span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+        &:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+            color: black;
+        }
+    }
+    &:hover span {
+        padding-right: 25px;
+      }
+    &:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+    &:active{
+        transform: scale(1.02);
+    }
+}
+// Home Button
+.back-to-home {
+    position: absolute;
+    top: 30px;
+    @media screen and (max-width: 576px) {
+        display: none;
+    }
+}

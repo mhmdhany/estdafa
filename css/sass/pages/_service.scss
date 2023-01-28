@@ -1,0 +1,144 @@
+// Start Service Section
+.section-services {
+	background-color: #e6edf7;
+	color: #202020;
+    padding: 60px 0;
+    .header-section {
+        margin-bottom: 34px;
+        .title {
+            position: relative;
+            padding-bottom: 14px;
+            margin-bottom: 25px;
+            font-weight: 700;
+            font-size: 35px;
+            span {
+                color: var(--blue);
+            }
+            &:before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 50px;
+                    height: 3px;
+                    background-color: var(--blue);
+                    border-radius: 3px;
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(30px);
+                width: 10px;
+                height: 3px;
+                background-color: #504f93;
+                border-radius: 3px;
+            }
+        }
+        .description {
+            font-size: 17px;
+            line-height: 1.7;
+            color: #282828;
+        }        
+    }
+    // Start Service Item
+    .single-service {
+        position: relative;
+        margin-top: 30px;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 40px 30px;
+        overflow: hidden;
+        .content {
+            position: relative;
+            z-index: 20;
+        }
+        .circle-before {
+            position: absolute;
+            top: 0;
+            right: 0px;
+            transform: translate(40%, -40%);
+            width: 150px;
+            height: 150px;
+            background-color: #aabad0;
+            border: 6px solid #504f93;
+            border-radius: 50%;
+            opacity: 0.5;
+            z-index: 10;
+            transition: all .6s;
+        }
+        &:hover .circle-before {
+            width: 100%;
+            height: 100%;
+            transform: none;
+            border: 0;
+            border-radius: 0;
+            opacity: 1;
+        }
+        .icon {
+            display: inline-block;
+            margin-bottom: 26px;
+            width: 70px;
+            height: 70px;
+            background-color: var(--purple);
+            border-radius: 5px;
+            line-height: 70px;
+            text-align: center;
+            color: #fff;
+            font-size: 30px;
+            transition: all .3s;
+        }
+        &:hover .icon {
+            background-color: #2b5bad;
+            color: #fff;
+        }
+        .title {
+            margin-bottom: 18px;
+            font-weight: 700;
+            font-size: 23px;
+            transition: color .3s;
+        }
+        &:hover .title {
+            color: #fff;
+        }
+        .description {
+            margin-bottom: 20px;
+            font-size: 14px;
+            transition: color .3s;
+        }
+        &:hover .description {
+            color: #fff;
+        }
+        a {
+            position: relative;
+            font-size: 18px;
+            color: #202020;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color .3s;
+        }   
+        &:hover a {
+            color: #fff;
+        }
+        a:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background-color: #d5dde8;
+            transition: background-color .3s;
+        } 
+        &:hover a:after {
+            background-color: #fff;
+        }
+    }
+} 
+// End Service Section
+// Service Footer
+.service-ft {
+    background-color: white !important;
+}
